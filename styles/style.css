@@ -86,6 +86,7 @@ ol {
   margin-top: 16px;
   column-gap: 40px;
   border: none;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__fieldset {
@@ -96,7 +97,6 @@ ol {
 
 /* Питер, например */
 .search-form__textfield {
-  font-family: Fira Sans Condensed;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -121,10 +121,20 @@ ol {
   user-select: none;
 }
 
-.search-form__checkbox 
+/* .search-form__pseudo-checkbox:active {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+} */
+
+.search-form__checkbox
 
 .search-form__label-text {
-  font-family: Fira Sans Condensed;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
