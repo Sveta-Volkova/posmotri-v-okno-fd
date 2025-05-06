@@ -44,6 +44,7 @@ ol {
   display: grid;
   grid-template-columns: 711px 399px;
   gap: 30px;
+  /* place-items: end;  стоит ли его использовать?*/
   align-items: end;
   inline-size: 1140px;
   block-size: 534px;
@@ -69,7 +70,7 @@ ol {
   object-position: center;
 }
 
-/* Search form */
+/* элементы под видео и состояния */
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -156,7 +157,7 @@ ol {
   border: 1px solid #fff;
 }
 
-/* обе кнопки */
+/* обе кнопки и их состояния */
 .button {
   min-block-size: 34px;
   border: 1px solid #fff;
@@ -184,10 +185,11 @@ ol {
   outline-offset: 1px;
 }
 
+/* вторая секция */
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 19px;
   block-size: 100%;
 }
 
@@ -196,7 +198,7 @@ ol {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 0.94;
+  line-height: 0.95;
   text-transform: uppercase;
 }
 
@@ -208,17 +210,23 @@ ol {
 .content__card-link {
   display: block;
   margin: 2px;
-  padding: 2px;
   color: #fff;
   text-decoration: none;
+  background-color: transparent;
+  position: relative;
 }
 
 .content__card-link_current {
-  background-color: #545050;
+  /* background-color: #545050; */
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .content__card-link:hover {
   text-decoration: underline;
+  /* код ниже почему-то не работает, но не удаляю, вдруг разберусь */
+  /* text-decoration-color: currentColor;
+  text-underline-offset: 3px; */
 }
 
 .content__card-link:active {
@@ -249,14 +257,14 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 28px;
 }
 
 /* элемент списка внутри темплейтов */
 .content__list-item {
   column-gap: 30px;
   row-gap: 30px;
-  padding-right: 3px;
+  padding-right: 1px;
 }
 
 /* контейнер внутри темплейтов */
@@ -292,6 +300,7 @@ ol {
 
 /* текст карточки */
 .content__video-card-description {
+  display: -webkit-box;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -301,13 +310,14 @@ ol {
   line-height: 16.2px;
   letter-spacing: 0%;
   color: #fff;
-  /* text-wrap: wrap; */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 /* картинка-превью */
 .content__video-card-thumbnail {
-  max-width: 194px;
-  max-height: 103px;
+  width: 194px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
 }
