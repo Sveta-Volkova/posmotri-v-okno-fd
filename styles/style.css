@@ -44,7 +44,7 @@ ol {
   display: grid;
   grid-template-columns: 711px 399px;
   gap: 30px;
-  /* place-items: end;  стоит ли его использовать?*/
+  /* place-items: end; */
   align-items: end;
   inline-size: 1140px;
   block-size: 534px;
@@ -224,7 +224,6 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  /* код ниже почему-то не работает, но не удаляю, вдруг разберусь */
   /* text-decoration-color: currentColor;
   text-underline-offset: 3px; */
 }
