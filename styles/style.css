@@ -270,7 +270,7 @@ ol {
 /* контейнер внутри темплейтов */
 .content__video-card {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 /* контейнер для текста карточки */
