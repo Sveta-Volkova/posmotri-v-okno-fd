@@ -44,7 +44,6 @@ ol {
   display: grid;
   grid-template-columns: 711px 399px;
   gap: 30px;
-  /* place-items: end; */
   align-items: end;
   inline-size: 1140px;
   block-size: 534px;
@@ -217,15 +216,12 @@ ol {
 }
 
 .content__card-link_current {
-  /* background-color: #545050; */
   text-decoration: none;
   background-color: transparent;
 }
 
 .content__card-link:hover {
   text-decoration: underline;
-  /* text-decoration-color: currentColor;
-  text-underline-offset: 3px; */
 }
 
 .content__card-link:active {
